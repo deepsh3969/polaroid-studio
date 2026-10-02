@@ -1,0 +1,35 @@
+{
+    "name": "Polaroid Studio — Create Beautiful Polaroids",
+    "short_name": "Polaroid Studio",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#16140F",
+    "theme_color": "#16140F",
+    "description": "Turn any photo into a vintage Polaroid print with frames, captions, film filters and date stamps.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

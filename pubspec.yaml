@@ -1,0 +1,66 @@
+name: polaroid_studio
+description: "Polaroid Studio - create, customize and export vintage Polaroid style photos."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  image_picker: ^1.2.3
+  camera: ^0.12.1
+  permission_handler: ^13.0.2
+  screenshot: ^3.0.0
+  gal: ^2.3.3
+  share_plus: ^13.3.1
+  google_fonts: ^9.0.0
+  image: ^4.10.1
+  path_provider: ^2.1.6
+  intl: ^0.20.3
+  shared_preferences: ^2.5.5
+  web: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  # Caption / display fonts. All files come from Google Fonts and are
+  # distributed under the SIL Open Font License 1.1 or Apache License 2.0.
+  # Bundling them guarantees the app (and exported Polaroids) render the same
+  # typography completely offline.
+  fonts:
+    - family: Caveat
+      fonts:
+        - asset: assets/fonts/Caveat-Regular.ttf
+    - family: PatrickHand
+      fonts:
+        - asset: assets/fonts/PatrickHand-Regular.ttf
+    - family: ShadowsIntoLight
+      fonts:
+        - asset: assets/fonts/ShadowsIntoLight-Regular.ttf
+    - family: HomemadeApple
+      fonts:
+        - asset: assets/fonts/HomemadeApple-Regular.ttf
+    - family: SpecialElite
+      fonts:
+        - asset: assets/fonts/SpecialElite-Regular.ttf
+    - family: PlayfairDisplay
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/PlayfairDisplay-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/PlayfairDisplay-Bold.ttf
+          weight: 700

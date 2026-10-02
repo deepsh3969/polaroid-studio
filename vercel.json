@@ -1,0 +1,34 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "bash -c 'set -e; if [ ! -d \"$HOME/flutter\" ]; then git clone --depth 1 -b 3.47.6 https://github.com/flutter/flutter.git \"$HOME/flutter\"; fi; export PATH=\"$HOME/flutter/bin:$PATH\"; flutter config --no-analytics; flutter --version'",
+  "buildCommand": "bash -c 'set -e; export PATH=\"$HOME/flutter/bin:$PATH\"; flutter pub get && flutter build web --release'",
+  "outputDirectory": "build/web",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/index.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/flutter_assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
