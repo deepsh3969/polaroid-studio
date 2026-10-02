@@ -1,0 +1,11 @@
+# Keep deployment payload minimal (build is produced in Vercel CI)
+build/
+.dart_tool/
+.idea/
+.flutter-plugins-dependencies
+.env
+.env.local
+.env.*
+*.iml
+coverage/
+*.log
