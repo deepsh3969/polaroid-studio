@@ -21,6 +21,25 @@ abstract final class AppStrings {
   static const String preview = 'PREVIEW';
   static const String settings = 'SETTINGS';
   static const String camera = 'CAMERA';
+  static const String showcase = 'SHOWCASE';
+
+  // Showcase / line carousel ---------------------------------------------
+  static const String showcaseTitle = 'Polaroid Line Carousel';
+  static const String showcaseIntro =
+      'Instant prints pegged to a sagging string. Drag the line to slide '
+      'them, tap a print to centre it, or let them wander on their own - '
+      'every swing is simulated live.';
+  static const String hintDrag = 'Drag the line';
+  static const String hintTap = 'Tap a print';
+  static const String hintKeys = 'Arrow keys';
+  static const String hintAutoplay = 'Autoplay';
+  static const String showcaseMeta =
+      '6 slides · rendered offline from one bundled photo';
+  static const String showcaseSource =
+      'lib/widgets/line_carousel.dart · CustomPainter';
+  static const String startCreating = 'Start Creating';
+  static const String previousPrint = 'Previous';
+  static const String nextPrint = 'Next';
 
   static const String exportPhoto = 'EXPORT PHOTO';
   static const String saveToGallery = 'Save to Gallery';

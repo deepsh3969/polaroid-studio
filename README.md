@@ -21,8 +21,14 @@ anywhere.
 * Gallery saving
 * Native sharing
 * Responsive interface
+* Line carousel showcase
 
 Details:
+
+* **Line carousel showcase** — the `/showcase` page pegs six prints to a
+  sagging string you can drag, tap to centre or step with arrow keys and
+  autoplay; the spring-and-swing simulation runs live on a `CustomPainter`
+  line.
 
 * **6 Polaroid frames** — classic, warm white, vintage cream, kraft, midnight
   and instant black, each with its own paper colour, border geometry and drop

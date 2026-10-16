@@ -15,6 +15,7 @@ import 'camera_screen.dart';
 import 'editor_screen.dart';
 import 'preview_screen.dart';
 import 'settings_screen.dart';
+import 'showcase_screen.dart';
 
 /// Landing screen: brand, primary actions and the offline creation history.
 class HomeScreen extends StatefulWidget {
@@ -131,6 +132,13 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text(AppStrings.appName, style: TextStyle(fontSize: 15)),
         actions: <Widget>[
+          IconButton(
+            key: const ValueKey<String>('showcase-button'),
+            tooltip: AppStrings.showcase,
+            onPressed: () =>
+                Navigator.of(context).pushNamed(ShowcaseScreen.routeName),
+            icon: const Icon(Icons.view_carousel_outlined),
+          ),
           IconButton(
             key: const ValueKey<String>('settings-button'),
             tooltip: AppStrings.settings,

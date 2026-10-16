@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../screens/home_screen.dart';
 import '../screens/settings_screen.dart';
+import '../screens/showcase_screen.dart';
 import '../services/settings_controller.dart';
 import '../utils/constants.dart';
 import 'settings_scope.dart';
@@ -28,6 +29,7 @@ class PolaroidStudioApp extends StatelessWidget {
           home: const HomeScreen(),
           routes: <String, WidgetBuilder>{
             SettingsScreen.routeName: (_) => const SettingsScreen(),
+            ShowcaseScreen.routeName: (_) => const ShowcaseScreen(),
           },
         ),
       ),
